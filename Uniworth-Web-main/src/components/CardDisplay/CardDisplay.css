@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+.card{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 20% 20%;
+    width:25vw;
+    height:600px;
+    /* background: #22e02b; */
+    /* background-image: ; */
+    background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  text-decoration-style: none;
+  text-decoration: none;
+  object-fit: contain;
+  /* position: fixed; */
+  overflow: hidden;
+  /* transition: transform 0.3s ease; */
+  /* position: fixed; */
+}
+.card{
+  transition: transform .5s ease;
+  z-index: 7;
+  /* cursor: pointer; */
+}
+.card background-image{
+  /* transition: transform 0.01s ease; */
+  z-index: 67;
+  /* cursor: pointer; */
+  background-attachment: fixed;
+  position: fixed;
+  
+}
+
+.card:hover {
+  /* transition: transform 2s ease; */
+  transform: scale(1.1);
+  z-index: 67;
+  /* animation: piczo 3s infinite ; */
+  /* Increase the scale factor for zoom effect */
+  cursor: pointer;
+}
+@keyframes piczo {
+  0% {
+    zoom: 1;
+    transform: scale(1.1); /* Start position */
+  }
+  25% {
+    zoom: 1;
+    transform: scale(1.2); /* Mid position */
+  }
+  50% {
+    zoom: 1;
+    transform: scale(1.2); /* Mid position */
+  }
+  75% {
+    zoom: 1;
+    transform: scale(1.2); /* Mid position */
+  }
+  100% {
+    zoom: 1;
+    transform: scale(1.2); /* End position */
+  }
+}
+/* .con-main a:hover{ */
+  /* transform: scale(1.23); */
+/* } */
+.con-main{
+  width:25vw;
+  height:auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  /* position:absolute; */
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-family: 'protest_Revolution';
+  font-family: 'Protest Guerrilla', sans-serif;
+  /* background: #22e02b; */
+}
+.con-main a{
+  text-decoration: none;
+  /* position: fixed; */
+  overflow: hidden;
+  /* transition: transform 1s ease; */
+}
+/* .card1{
+    background: #ccc;
+} */
+.card2, .card3{
+    /* background: #ff0000; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    /* animation: none;
+    transition: none; */
+    /* position: relative; */
+    /* position: absolute; */
+    z-index: 50;
+    /* top: -3px; */
+    /* left: 0; */
+    /* left:-90%; */
+    /* width: 100%;
+    height: 90%; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    opacity: 1;
+    /* transition: opacity 0.5s ease; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    transition: 1.4s;
+}
+.card2 h2, .card3 button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    border: 1px solid #fff;
+    width:60%;
+    height: 60px;
+    font-size: 1.7rem;
+    color: #fff;
+    /* color: #000; */
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    background-size: cover;
+  background-position: center;
+    /* text-wrap: ; */
+    font-family: 'PPWoodland-Bold' !important;
+    font-family: 'Protest Guerrilla', sans-serif;
+    /* list-style: none; */
+    text-decoration-style: none;
+    text-decoration: none;
+    animation: none;
+    transition: none;
+}
+.card3 button{
+    background: #edf0;
+    border:none;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background: #ff0000; */
+    
+}
+/* #arrow{
+    position: relative;
+    top:5px;
+    transform: rotateX(10deg);
+} */
+#arrow, .btn {
+    position: relative;
+    top: 5px;
+    transform: rotateX(10deg);
+    transition: transform 1s ease; /* Add transition for smooth animation */
+     cursor: pointer;
+}
+  
+  #arrow:hover,
+  .btn:hover {
+    animation: moveArrowX 5s infinite; /* Define animation for hovering */
+  }
+  
+  @keyframes moveArrowX {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    50% {
+      transform: translateX(50px); /* Mid position */
+    }
+    100% {
+      transform: translateX(0); /* End position */
+    }
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 660px){
+    .con-main{
+      width:80vw;
+      height:90vh;
+      /* height: auto; */
+      object-fit: cover;
+      background-size: cover;
+    }
+    .card{
+      width:80vw;
+      height: 90vh;
+    }
+}
+@media screen and (min-width:661px) and (max-width: 992px){
+  .con-main{
+    width:50vw;
+    height:auto;
+    object-fit: cover;
+  }
+  .card{
+    width:40vw;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 2000px){
+  .con-main{
+    width:25vw;
+    object-fit: cover;
+    height:700px;
+
+  }
+  .card{
+    height: 700px;
+  }
+}
+@media screen and (min-width: 2001px) and (max-width: 3000px){
+  .con-main{
+    width:25vw;
+    object-fit: cover;
+    height:900px;
+
+  }
+  .card{
+    height: 900px;
+    background-size: cover;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 3001px) and (max-width: 4000px){
+  .con-main{
+    width:27vw;
+    object-fit: cover;
+    height:1200px;
+
+  }
+  .card{
+    height: 1200px;
+    background-size: cover;
+    object-fit: contain;
+  }
+}
+@media screen and (min-width: 4001px) and (max-width: 5000px){
+  .con-main{
+    width:27vw;
+    object-fit: cover;
+    height:1600px;
+
+  }
+  .card{
+    height: 1600px;
+    background-size: cover;
+    object-fit: contain;
+  }
+}

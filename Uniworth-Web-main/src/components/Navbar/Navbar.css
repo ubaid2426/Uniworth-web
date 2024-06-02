@@ -1,0 +1,343 @@
+.app__navbar{
+    width:100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    /* margin-top: 30px; */
+    position:fixed;
+    top:0;
+    height:100px;
+    left:0;
+    background-attachment: fixed;
+    z-index: 99;
+    /* margin-left:-30px; */
+    /* padding: 1rem 2rem; */
+}
+ .cf{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    /* position:fixed; */
+    z-index: 21;
+    margin-left: 30px;
+    /* left:350px; */
+}
+/* .app__navbar-links */
+ .cf li{
+    /* margin:0 1rem; */
+    cursor:pointer;
+    color:#fff;
+}
+.app__navbar-links li:hover{
+    color:#fff;
+}
+.app__navbar-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  .app__navbar-login a{
+  color:#000;
+    margin:0 1rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+    margin-left:60px;
+
+}
+.app__navbar-login a:hover{
+    /* border-bottom: 1px solid #ccc; */
+    text-decoration:none;
+}
+
+.app__navbar-login span{
+    border-left: 1px solid #ccc;
+}
+.app__navbar-smallscreen{
+    display: none;
+    /* display: block; */
+    margin-right: 40px;
+}
+.app__navbar-smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    /* background: black; */
+    color:#fff;
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 100;
+}
+.app__navbar-smallscreen_overlay .overlay__close{
+    font-size: 27px;
+    color: #fff;
+    /* color: #000; */
+    cursor: pointer;
+    position: absolute;
+    /* top:20px;
+    right: 20px; */
+}
+.app__navbar-smallscreen_links{
+    list-style: none;
+}
+.app__navbar-smallscreen_links li{
+    margin: 1rem;
+    cursor: pointer;
+    color: #ccc;
+    color:#fff;
+    /* background: #fff; */
+    font-size: 1rem;
+    text-align: start;
+    justify-content: flex-start;
+    font-family: var(--font-base);
+}
+.app__navbar-smallscreen_links li:hover{
+    color: #fff;
+    /* color: #000; */
+}
+@media screen and (max-width: 2000px){
+.app__navbar-logo img{
+    width: 210px;
+}
+}
+
+@media screen and (max-width: 1150px){
+    /* .app__navbar-links, */
+   .cf {
+        display: none;
+    }
+    .app__navbar-smallscreen{
+        display: flex;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 650px){
+  .app__navbar{
+   padding: 0rem;
+  }
+  .app__navbar-login{
+    display: none;
+  }
+  .app__navbar-logo img{
+    width: 110px;
+}
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Main level */
+.menu {
+  margin: 0px auto;
+  width: 800px;
+}
+
+.menu > li {
+  background: #34495e;
+  background: #34495e;
+  background: #fff;
+  /* color:#000; */
+  /* background-image: linear-gradient(0deg, #4d4855 0%, #000000 74%); */
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 0.70rem;
+  font-size: 0.80rem;
+}		
+
+.menu li:hover {
+  background: #e74c3c;
+  background: #5D0B0E;
+  color:#fff;
+  background: #AB0E17;
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; 
+  margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #34495e;
+  background-color: #000;
+  background-color: #fff;
+  color:#000;
+  /* background-image: linear-gradient(0deg, #4d4855 0%, #000000 74%); */
+  position: relative;
+  overflow: hidden;
+}
+
+.submenu > li > a {
+  padding: 1em 2em;
+  /* background: #fff;
+  color:#000; */
+}
+
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+  margin-left: 50px;
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+
+.submenu li {
+  transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+/* side bar menu  */
+/* Style for the main navigation */
+.app__navbar-smallscreen_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  background-color: #5D0B0E;
+}
+
+.app__navbar-smallscreen_links li {
+  position: relative;
+}
+
+.app__navbar-smallscreen_links a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  /* color: #34495e; */
+  color:#fff;
+  font-size: 1.5rem;
+}
+
+/* Style for the submenu */
+.sub{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Change as needed */
+  border: 1px solid #ccc; /* Change as needed */
+  z-index: 1;
+}
+
+/* Show the submenu on hover */
+.app__navbar-smallscreen_links li:hover .sub{
+  display: block;
+}
+
+.sub li {
+  border-bottom: 1px solid #ccc; /* Change as needed */
+}
+
+.sub li:last-child {
+  border-bottom: none;
+}
+
+.sub li a {
+  padding: 10px;
+  display: block;
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+/* Style for active/hovered menu item */
+.app__navbar-smallscreen_links li:hover > a {
+  background-color: #f0f0f0; /* Change as needed */
+}
+

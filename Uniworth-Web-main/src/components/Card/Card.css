@@ -1,0 +1,168 @@
+/* #main{
+    margin: 20px 2px;
+    padding: 2px 2px; */
+/* gap: 50px; */
+/* } */
+#card-main{
+    height: 550px;
+    width:100%;
+    object-fit: cover;
+    display: flex;
+    /* gap: 50px; */
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
+body{
+    padding: 0px;
+    margin:0px;
+}
+  
+  /* Define styles for the card */
+  #card-main {
+    position: relative;
+    overflow: hidden;
+    /* z-index: 45; */
+  }
+  
+  /* Define styles for the image */
+  #card-main img {
+      width: 100%;
+    
+  }
+  #card-main:hover::before {
+    opacity: 1;
+  }
+  
+ 
+  .hover_card-main, .icons-card{
+    position: absolute;
+    z-index: 50;
+    top: -3px;
+    /* left: 0; */
+    left:-90%;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    opacity: 0;
+    /* transition: opacity 0.5s ease; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1.4s;
+  }
+#card-main:hover .hover_card-main,
+#card-main:hover .icons-card{
+    opacity: 1;
+    /* for use extra width card */
+    left:-5%;  
+    left:0%;  
+    top:0px;
+    /* transform: scale(1.1); */
+}
+ 
+  .icons-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+    color:#fff;
+    width:90%;
+    /* margin-right: 50px; */
+    z-index: 59;
+    /* position: relative; */
+}
+.icons-card a{
+      text-decoration: none;
+    font-size: 30px;
+    color:#ccc;
+    color:#000;
+    margin: 30px 2px;
+    transform: rotateY(10deg);
+    transition: transform 1s ease;
+    position: relative;
+    top:0px;
+  }
+  .icons-card a:hover{
+    color:#ff0000;
+    animation: moveiconX 1s infinite;
+  }
+  @keyframes moveiconX {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    50% {
+      transform: translateY(10px); /* Mid position */
+    }
+    100% {
+      transform: translateY(0); /* End position */
+    }
+  }
+  .hover_card-main{
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 320px)and (max-width:700px){
+    #card-main{
+height:400px;
+        
+    }
+}
+@media only screen  and (min-width: 700px) and (max-width:992px){
+    #card-main{
+      height:450px;
+    }
+    .icons-card a{
+      top:-20px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width:1400px) {
+    #card-main{
+        height:450px;
+    }
+     .icons-card a{
+      top: -80px;
+      margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1401px) and (max-width:1700px) {
+    #card-main{
+        height:550px;
+    }
+     .icons-card a{
+      top: -80px;
+      margin-right: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1701px) and (max-width:2600px) {
+    #card-main{
+        height:50em;
+        overflow: hidden;
+        row-gap: 20px;
+    }
+     .icons-card a{
+      top: -80px;
+      margin-right: 20px;
+      font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 2601px) and (max-width:4500px) {
+    #card-main{
+        height:65em;
+        overflow: hidden;
+        row-gap: 20px;
+    }
+     .icons-card a{
+      top: -80px;
+      margin-right: 20px;
+      font-size: 60px;
+    }
+}

@@ -1,0 +1,147 @@
+#main{
+    /* margin: 20px 2px; */
+    padding: 2px 2px;
+    overflow: hidden;
+    /* background: #fff; */
+/* gap: 50px; */
+}
+.responsiive{
+  background: #ff0000;
+  background: #fff;
+}
+#card{
+    height: 50vh;
+    /* width:25%; */
+    object-fit: cover;
+    display: flex;
+    gap: 50px;
+    /* gap: 50px; */
+    justify-content: center;
+    align-items: center;
+}
+body{
+    padding: 0px;
+    margin:0px;
+    /* background: #fff; */
+}
+.slider-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Define styles for the card */
+  #card {
+    position: relative;
+    overflow: hidden;
+    /* z-index: 45; */
+  }
+  
+  /* Define styles for the image */
+  #card img {
+      width: 90%;
+    
+  }
+  #card:hover::before {
+    opacity: 1;
+  }
+  
+ 
+  .hover_card, .icons{
+    position: absolute;
+    z-index: 50;
+    top: -5px;
+    /* left: 0; */
+    left:-90%;
+    width: 100%;
+    /* height: 600px; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    opacity: 0;
+    /* transition: opacity 0.5s ease; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1.4s;
+  }
+#card:hover .hover_card,
+#card:hover .icons{
+    opacity: 1;
+    /* for use extra width card */
+    left:-5%;
+    /* top:-64px;  */
+    /* left:0%;   */
+    /* transform: scale(1.1); */
+}
+#card:hover .icons{
+  margin-left: -30px;
+}
+ 
+  .icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 30px;
+    color:#fff;
+    width:90%;
+    margin-right: 50px;
+    z-index: 59;
+    /* position: relative; */
+}
+.icons a{
+      text-decoration: none;
+    font-size: 30px;
+    color:#fff;
+    margin: 20px 2px;
+    /* padding: 20px 0px; */
+    transform: rotateY(10deg);
+    transition: transform 1s ease;
+    /* position: relative; */
+    /* top:-50px; */
+  }
+  .icons a:hover{
+    color:#ff0000;
+    animation: moveiconX 1s infinite;
+  }
+  @keyframes moveiconX {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    50% {
+      transform: translateY(10px); /* Mid position */
+    }
+    100% {
+      transform: translateY(0); /* End position */
+    }
+  }
+  .hover_card{
+    overflow: hidden;
+  }
+
+ @media screen and (min-width: 0px)and (max-width:700px){
+    #card{
+height:15vh;
+        
+    }
+}
+
+ @media screen and (min-width: 701px)and (max-width:1500px){
+    #card{
+height:25vh;
+        
+    }
+}
+
+@media screen and (min-width: 1501px)and (max-width:3000px){
+    #card{
+height:35vh;
+        
+    }
+}
+
+@media screen and (min-width: 3001px)and (max-width:4500px){
+    #card{
+height:50vh;
+        
+    }
+}

@@ -1,0 +1,23 @@
+/* body{ */
+    /* background: #ff0000; */
+/* } */
+#svg1{
+    position: relative;
+    z-index: 3;
+    /* background: #ff0000; */
+    background-color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    /* color:#ff0000; */
+    /* overflow: hidden; */
+    }
+    .bottom-1{
+    /* transform:rotate(180deg); */
+    /* position:absolute; */
+    background: #fff;
+    /* top:20px; */
+    /* color:#ccc; */
+    /* z-index: 79895; */
+    }
+    /* .bottom-2{
+        background: red;
+    } */

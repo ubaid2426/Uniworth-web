@@ -1,0 +1,210 @@
+/* @import '../../Images/New_Arrivals_front/Activewear.webp'; */
+.section1, .section3{
+    height:0px;
+    width:100vw;
+    background: #692323;
+    background-color: transparent;
+    background-image: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.main{
+width:100vw;
+overflow: hidden;
+position: relative;
+background: transparent;
+}
+.section2{
+    width:100%;
+    height: 500px;
+    /* height: 100vh; */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    background-image: url('../../Images/New_Arrivals_front/Activewear.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    /* background-position: center; */
+}
+.section2 img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    background-size: contain;
+    background-attachment: fixed;
+    /* position: fixed; */
+}
+/* .main{ */
+    /* height: 400vh; */
+/* } */
+
+   
+        .sec-sub{
+            width:100%;
+            height: 400px;
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            z-index: 45;
+
+        }
+        .sec-1, .sec-2, .sec-3{
+            width:31vw;
+            /* gap: 100px; */
+            padding:10px 5px;
+            /* background: #ccc; */
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color:#fff;
+            left:100px;
+
+        }
+        .sec-1 span{
+            color:#fff;
+            font-size: 1.9rem;
+            letter-spacing: .1rem;
+            text-align: center;
+        }
+        .sec-2 span{
+            color:#fff;
+            font-size: 1.1rem;
+            letter-spacing: .1rem;
+            text-align: center;
+        }
+        .sec-3 button{
+            font-size: 1.2rem;
+            height:40px;
+            background: transparent;
+            border:1px solid #fff;
+            color:#fff;
+            cursor: pointer;
+        }
+        @media screen and (min-width:0px) and (max-width: 599px){
+            .section2 {
+              background-image: url('../../Images/ative-mobile.webp');
+              width:100vw;
+             object-fit: cover;
+            }
+            .sec-1, .sec-2, .sec-3{
+                width:80vw;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left:30px;
+            }
+           
+             .sec-1 span{
+                font-size:28px ;
+             }
+             .sec-2 span{
+               font-size:1rem ;
+            }
+            .sec-3 button{
+               font-size:1.2rem ;
+            }
+        
+            } 
+            @media screen and (min-width: 600px) and (max-width:1000px){
+                .section2{
+                   background-image: url('../../Images/New_Arrivals_front/Activewear.webp');
+                    /* object-fit: contain; */
+                    /* background-size: contain;
+                    background-position: center; */
+                    /* background-image: ; */
+                  }
+                  .sec-1, .sec-2, .sec-3{
+                    width:80vw;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    left:30px;
+                }
+                  .sec-1 span{
+                     font-size:1.5rem ;
+                  }
+                  .sec-2 span{
+                    font-size:1rem ;
+                 }
+                 .sec-3 button{
+                    font-size:1.3rem ;
+                 }
+            
+                }
+                @media screen and (min-width: 1001px) and (max-width:2500px){
+                    .section2{
+                       background-image: url('../../Images/New_Arrivals_front/Activewear.webp');
+                        width:100%;
+                        height:50em;
+                      }
+                      .sec-1, .sec-2, .sec-3{
+                        width:51vw;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        /* left:30px; */
+                    }
+                      .sec-1 span{
+                         font-size:1.8rem ;
+                      }
+                      .sec-2 span{
+                        font-size:1.3rem ;
+                     }
+                     .sec-3 button{
+                        font-size:1.5rem ;
+                     }
+                
+                    }
+
+                        @media screen and (min-width: 2501px) and (max-width:4560px){
+                    .section2{
+                       background-image: url('../../Images/New_Arrivals_front/Activewear.webp');
+                        width:100%;
+                        height:70em;
+                      }
+                      .sec-1, .sec-2, .sec-3{
+                        width:41vw;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        /* left:30px; */
+                    }
+                      .sec-1 span{
+                         font-size:2.8rem ;
+                      }
+                      .sec-2 span{
+                        font-size:2.3rem ;
+                     }
+                     .sec-3 button{
+                        font-size:2.5rem ;
+                     }
+                
+                    }
+
+                    /* body{ */
+    /* background: #ff0000; */
+/* } */
+    .extra8{
+        height:10px;
+        /* z-index: 89; */
+        /* background: #ccc; */
+        /* background-color: #ccc; */
+        margin-top: 100px;
+        background: transparent;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+    }

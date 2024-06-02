@@ -1,0 +1,36 @@
+.Ship{
+   display:grid;
+   place-items: center;
+   grid-template-columns: 1fr 1fr 1fr;
+    width:90%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    /* border-right: 1px solid #ccc; */
+    height:200px;
+}
+.ship1, .ship2, .ship3{
+display:flex;
+justify-content: center;
+align-items: center;
+font-size: 1.3em;
+font-weight: 400;
+}
+.ship1:hover, .ship2:hover, .ship3:hover{
+    color:#ff0000;
+    cursor: pointer;
+}
+.ship1, .ship2{
+    border-right: 1px solid #ccc;
+    /* margin: 0px 100px; */
+    padding: 0px 100px;
+    height: 100px;
+}
+.ship-main{
+    width:100vw;
+    display:grid;
+    place-items: center;
+}
+.extra5, .extra6{
+    height: 50px;
+    background: #fff;
+}
