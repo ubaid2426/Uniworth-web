@@ -1,0 +1,21 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+  margin: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar.scrolled {
+    width:100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar:not(.scrolled) {
+  background-color: transparent;
+}
